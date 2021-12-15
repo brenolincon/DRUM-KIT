@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./imagens/Locação-de-Palco.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Opens Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo {
+  margin: 20vh auto;
+  color: white;
+  font-size: calc(5vw + 20px);
+}
+
+.conteudo {
+  width: 90vw;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.tecla {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000BB;
+  color: white;
+  font-size: calc(3vw + 20px);
+  border: 3px solid white;
+  user-select: none;
+  cursor: pointer;
+}
