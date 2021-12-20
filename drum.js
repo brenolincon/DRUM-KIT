@@ -1,15 +1,15 @@
 "use strict";
 
 const sons = {
-  A: "boom.wav",
-  S: "clap.wav",
-  D: "hihat.wav",
+  A: "tom-high.wav",
+  S: "2_kick.wav",
+  D: "hihat-close.wav",
   F: "kick.wav",
-  G: "openhat.wav",
+  G: "hihat-open.wav",
   H: "ride.wav",
   J: "snare.wav",
-  K: "tink.wav",
-  L: "tom.wav",
+  K: "tom-mid.wav",
+  L: "tom-low.wav",
 };
 
 const criarDiv = (texto) => {
@@ -23,7 +23,7 @@ const criarDiv = (texto) => {
 const exibir = (sons) => Object.keys(sons).forEach(criarDiv);
 
 const tocarSom = (letra) => {
-  const audio = new Audio(`./sounds/${sons[letra]}`);
+  const audio = new Audio(`./sons/${sons[letra]}`);
   audio.play();
 };
 const ativarDiv = (evento) => {
